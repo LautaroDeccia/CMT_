@@ -1,4 +1,3 @@
-import java.util.Objects;
 
 public class Usuario {
     private String id;
@@ -24,6 +23,7 @@ public class Usuario {
         this.contrasena = "";
         this.rol = null;
     }
+    // Constructor vacío
 
     // Getters y Setters
     public String getId() { return id; }
