@@ -1,13 +1,13 @@
 
 public class Usuario {
-    private String id;
+    private int id;
     private String nombre;
     private String correoElectronico;
     private String contrasena; // Debe guardarse encriptada
     private Rol rol;
 
     // Constructor principal
-    public Usuario(String id, String nombre, String correoElectronico, String contrasena, Rol rol) {
+    public Usuario(int id, String nombre, String correoElectronico, String contrasena, Rol rol) {
         this.id = id;
         this.nombre = nombre;
         this.correoElectronico = correoElectronico;
@@ -26,8 +26,8 @@ public class Usuario {
     // Constructor vacío
 
     // Getters y Setters
-    public String getId() { return id; }
-    public void setId(String id) { this.id = id; }
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
 
     public String getNombre() { return nombre; }
     public void setNombre(String nombre) { this.nombre = nombre; }
