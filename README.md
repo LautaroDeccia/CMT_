@@ -19,13 +19,13 @@ vez creado.]
 de productos al ser creado.]
 ---
 ## 󰞵 Participantes
-| Nombre completo  | Usuario GitHub  | Aporte principal  |
-|----------------- |---------------- |------------------ |
-| Lautaro Deccia   | LautaroDeccia   | Clase Programador |
-| Emilano Martella |                 | Clase Pedido      |
-| Ezequiel Arigon  |                 | Clase Producto    |
-| David Gamboa     |                 | Clase Producto    |
-| Emanuel Quiroga  | MigueelQuirogaaa| Clase Producto    |
+| Nombre completo  | Usuario GitLab    | Aporte principal  |
+|----------------- |----------------   |------------------ |
+| Lautaro Deccia   | lautaro.deccia    | Clase Programador |
+| Emilano Martella | emiliano.martella | Clase Programador |
+| Ezequiel Arigon  | ezequil.arigon    | Clase Programador |
+| David Gamboa     | david.gamboa      | Clase Programador |
+| Emanuel Quiroga  | emanuel.quiroga   | Clase Programador |
 > Se puede verificar la participación individual a través del
 historial de commits en este repositorio.
 ---
