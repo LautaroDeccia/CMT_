@@ -24,9 +24,9 @@ de productos al ser creado.]
 |----------------- |----------------   |------------------ |
 | Lautaro Deccia   | lautaro.deccia    | Clase Programador |
 | Emilano Martella | emiliano.martella | Clase Programador |
-| Ezequiel Arigon  | ezequil.arigon    | Clase Programador |
+| Ezequiel Arigon  | ezequiel.arigon   | Clase Programador |
 | David Gamboa     | ramon.gamboa      | Clase Programador |
-| Emanuel Quiroga  | emanuel.quiroga   | Clase Programador |
+| Emanuel Quiroga  | miguel.quiroga    | Clase Programador |
 > Se puede verificar la participación individual a través del
 historial de commits en este repositorio.
 ---
