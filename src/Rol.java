@@ -5,6 +5,9 @@ public class Rol {
     private List<String> permisos;
 
     public Rol(String nombre, List<String> permisos) {
+        if (nombre == null || nombre.trim().isEmpty()) {
+            throw new IllegalArgumentException("El nombre del rol no puede estar vacío.");
+        }
         this.nombre = nombre;
         this.permisos = permisos;
     }
@@ -14,6 +17,9 @@ public class Rol {
     }
 
     public void setNombre(String nombre) {
+        if (nombre == null || nombre.trim().isEmpty()) {
+            throw new IllegalArgumentException("El nombre del rol no puede estar vacío.");
+        }
         this.nombre = nombre;
     }
 
