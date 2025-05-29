@@ -17,6 +17,7 @@ entrega.
 vez creado.]
 - [Ejemplo: Se considera que un pedido puede tener una lista vacía
 de productos al ser creado.]
+- [Ejemplo: Se asume que un usuario debe tener al menos un rol asignado al momento de su creación.]
 ---
 ## 󰞵 Participantes
 | Nombre completo  | Usuario GitLab    | Aporte principal  |
