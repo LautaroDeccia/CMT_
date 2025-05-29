@@ -1,5 +1,6 @@
 import java.util.List;
 
+//hereda de la clase Usuario
 public class FuncionarioUsuario extends Usuario {
     private String cargo; // Ejemplo: Psicopedagogo, Docente, Administrador
     private List<SesionUsuario> sesionesActivas; // Lista de sesiones activas

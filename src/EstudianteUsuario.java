@@ -1,5 +1,6 @@
 import java.util.List;
 
+//hereda de la clase Usuario
 public class EstudianteUsuario extends Usuario {
     private String historialMedico;
     private String historialPsicologico;
