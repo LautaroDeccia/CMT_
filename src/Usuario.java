@@ -2,7 +2,7 @@
 import java.util.List;
 import java.util.Objects;
 
-public class Usuario {
+public abstract class Usuario {
     private int id;
     private String nombre;
     private String apellido;
@@ -12,19 +12,8 @@ public class Usuario {
     private String sede;
     private Rol rol;
 
-    // Atributos específicos para el rol ESTUDIANTE
-    private String historialMedico;
-    private String historialPsicologico;
-    private List<ArchivoAdjunto> archivosAdjuntos;
-    private boolean activo;
-    private List<Comentario> comentarios;
-    private NivelUrgencia nivelUrgencia;
-
     // Constructor principal
-    public Usuario(int id, String nombre, String apellido,String numeroTelefono, String correoElectronico, String contrasena,sede, Rol rol,
-                   String historialMedico, String historialPsicologico,
-                   List<ArchivoAdjunto> archivosAdjuntos, boolean activo,
-                   List<Comentario> comentarios, NivelUrgencia nivelUrgencia) {
+    public Usuario(int id, String nombre, String apellido, String numeroTelefono, String correoElectronico, String contrasena, String sede, Rol rol) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -33,12 +22,6 @@ public class Usuario {
         this.contrasena = contrasena;
         this.sede = sede;
         this.rol = rol;
-        this.historialMedico = historialMedico;
-        this.historialPsicologico = historialPsicologico;
-        this.archivosAdjuntos = archivosAdjuntos;
-        this.activo = activo;
-        this.comentarios = comentarios;
-        this.nivelUrgencia = nivelUrgencia;
     }
 
     // Constructor vacío
@@ -63,8 +46,8 @@ public class Usuario {
     public String getApellido() { return apellido; }
     public void setApellido(String apellido) { this.apellido = apellido; }
 
-    public String getNumeroTelefono(){ return numeroTelefono; }
-    public void setNumeroTelefono(String numeroTelefono) { this.numeroTelefono = numeroTelefono;}
+    public String getNumeroTelefono() { return numeroTelefono; }
+    public void setNumeroTelefono(String numeroTelefono) { this.numeroTelefono = numeroTelefono; }
 
     public String getCorreoElectronico() { return correoElectronico; }
     public void setCorreoElectronico(String correoElectronico) { this.correoElectronico = correoElectronico; }
@@ -72,34 +55,11 @@ public class Usuario {
     public String getContrasena() { return contrasena; }
     public void setContrasena(String contrasena) { this.contrasena = contrasena; }
 
-    public String getSede() {
-        return sede;
-    }
-    public void setSede(String sede) {
-        this.sede = sede;
-    }
+    public String getSede() { return sede; }
+    public void setSede(String sede) { this.sede = sede; }
 
     public Rol getRol() { return rol; }
     public void setRol(Rol rol) { this.rol = rol; }
-
-    // Getters y Setters específicos para estudiantes
-    public String getHistorialMedico() { return historialMedico; }
-    public void setHistorialMedico(String historialMedico) { this.historialMedico = historialMedico; }
-
-    public String getHistorialPsicologico() { return historialPsicologico; }
-    public void setHistorialPsicologico(String historialPsicologico) { this.historialPsicologico = historialPsicologico; }
-
-    public List<ArchivoAdjunto> getArchivosAdjuntos() { return archivosAdjuntos; }
-    public void setArchivosAdjuntos(List<ArchivoAdjunto> archivosAdjuntos) { this.archivosAdjuntos = archivosAdjuntos; }
-
-    public boolean isActivo() { return activo; }
-    public void setActivo(boolean activo) { this.activo = activo; }
-
-    public List<Comentario> getComentarios() { return comentarios; }
-    public void setComentarios(List<Comentario> comentarios) { this.comentarios = comentarios; }
-
-    public NivelUrgencia getNivelUrgencia() { return nivelUrgencia; }
-    public void setNivelUrgencia(NivelUrgencia nivelUrgencia) { this.nivelUrgencia = nivelUrgencia; }
 
     // equals y hashCode
     @Override
@@ -125,10 +85,6 @@ public class Usuario {
                 ", numeroTelefono='" + numeroTelefono + '\'' +
                 ", correoElectronico='" + correoElectronico + '\'' +
                 ", rol=" + (rol != null ? rol.toString() : "null") +
-                (rol == Rol.ESTUDIANTE ?
-                        ", activo=" + activo +
-                                ", nivelUrgencia=" + nivelUrgencia : "") +
                 '}';
     }
 }
-
