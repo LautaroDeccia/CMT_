@@ -4,9 +4,9 @@ public class SolicitudAsistencia {
     private int id;
     private String estudiante;
     private String descripcion;
-    private LocaleDateTime fecha;
+    private LocalDateTime fecha;
 //Constructor Principal
-    public SolicitudAsistencia(int id, LocaleDateTime fecha, String descripcion, String estudiante) {
+    public SolicitudAsistencia(int id, LocalDateTime fecha, String descripcion, String estudiante) {
         this.id = id;
         this.fecha = fecha;
         this.descripcion = descripcion;
@@ -37,11 +37,11 @@ public class SolicitudAsistencia {
         this.descripcion = descripcion;
     }
 
-    public LocaleDateTime getFecha() {
+    public LocalDateTime getFecha() {
         return fecha;
     }
 
-    public void setFecha(LocaleDateTime fecha) {
+    public void setFecha(LocalDateTime fecha) {
         this.fecha = fecha;
     }
     // Método toString()
