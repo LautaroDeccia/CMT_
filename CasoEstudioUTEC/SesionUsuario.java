@@ -34,4 +34,16 @@ public class SesionUsuario {
     public boolean isActiva() {
         return estado == EstadoSesion.ACTIVO && LocalDateTime.now().isBefore(fechaExpiracion);
     }
+    @Override
+    public String toString() {
+        return "SesionUsuario{" +
+                "id=" + id +
+                ", usuario=" + usuario +
+                ", token='" + token + '\'' +
+                ", fechaInicio=" + fechaInicio +
+                ", fechaExpiracion=" + fechaExpiracion +
+                ", estado=" + estado +
+                '}';
+    }
+
 }
