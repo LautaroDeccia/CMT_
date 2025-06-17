@@ -4,7 +4,7 @@ public class InstanciaSeguimiento {
     private String descripcion;
     private String estado;
     private String fechaCreacion;
-
+    //fUNCIONARIO?
     // Constructor
     public InstanciaSeguimiento(String id, String descripcion, String estado, String fechaCreacion) {
         this.id = id;
